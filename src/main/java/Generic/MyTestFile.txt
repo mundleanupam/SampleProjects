@@ -1,0 +1,9 @@
+2017-11-13 21:02:58  A Sample Debug Message DEBUG 200 abc
+2017-11-13 21:02:58  A Sample Debug Message EXCEPTION 500 abc
+2017-11-13 21:02:58  A Sample Debug Message INFO 200 xyz
+2017-11-13 21:02:58  A Sample Debug Message EXCEPTION 404 abc
+2017-11-13 21:02:58  A Sample Debug Message INFO 200 def
+2017-11-13 21:02:58  A not Sample Debug EXCEPTION EXCEPTION 200 def
+2017-11-13 21:02:58  A Sample Debug Message EXCEPTION 200 def
+2017-11-13 21:02:58  A Sample Debug Message EXCEPTION 200 def
+2017-11-13 21:02:58  A Sample Debug Message EXCEPTION 200 lmn
