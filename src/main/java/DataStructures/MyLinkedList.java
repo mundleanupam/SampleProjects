@@ -192,7 +192,7 @@ public class MyLinkedList {
     //this is used only for loop creation
     public Node add(Object data, String fake) {
 
-        // Initialize Node only incase of 1st element
+        // Initialize Node only in case of 1st element
         if (head == null) {
             head = new Node(data);
             incrementCounter();

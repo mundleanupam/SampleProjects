@@ -89,6 +89,11 @@ public class Samples {
             System.out.println("]");
         }
 
+        System.out.println(multiply(2 ,3));
+        System.out.println(multiply(2 ,-3));
+        System.out.println(multiply(-2 ,-3));
+        System.out.println(multiply(-2 ,3));
+
     }
 
     // Reverse a integer
@@ -764,7 +769,7 @@ public class Samples {
         return answer;
     }
 
-    // Rotate a matris by 90 degrees
+    // Rotate a matrix by 90 degrees
     // Step 1 - Transpose the matrix
     // Step 2 - Swap the elements row wise till it reaches middle element
     // Transpose the matrix by swapping
@@ -878,6 +883,53 @@ public class Samples {
             n = n / 2;
         }
         return power;
+    }
+
+    public int findPeakElement(int[] nums) {
+        int before = -1, current = 0, after = current+1;
+        if(nums.length == 1) {
+            return 0;
+        }
+
+        for(int i = 0; i < nums.length; i++) {
+            if(current == 0) {
+                if(nums[after] < nums[current]) {
+                    return current;
+                }
+            }
+            else if(current == nums.length - 1) {
+                if(nums[before] < nums[current]) {
+                    return current;
+                }
+            } else if (nums[before] < nums[current] && nums[current] > nums[after]) {
+                return current;
+            }
+
+            before++;
+            current++;
+            after++;
+        }
+        return 0;
+    }
+
+    public static int multiply(int a, int b){
+        if(a==0 || b==0) return 0;
+        int c = 0;
+        int d = 0;
+        if(b>0){
+            for(int i=0; i<b; i++){
+                c+=a;
+            }
+            return c;
+        }
+        if(b<0){
+            for(int j=b; j<0; j++){
+                c+=a;
+                d = -c;
+            }
+            return d;
+        }
+        return -1;
     }
 
 }

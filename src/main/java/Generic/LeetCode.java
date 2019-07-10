@@ -206,8 +206,6 @@ public class LeetCode {
     // hour = (sec / (24*3600)) / 3600
     static void ConvertSectoDay(int n)
     {
-        String str = "abc";
-        String str1 = new StringBuffer(str).reverse().toString();
         StringBuilder sb = new StringBuilder();
         StringBuilder sb1 = new StringBuilder();
         int day = n / (24 * 3600);

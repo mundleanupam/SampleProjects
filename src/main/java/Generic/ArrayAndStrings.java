@@ -211,7 +211,7 @@ public class ArrayAndStrings {
     public static String removeDuplicates(char[] str) {
         if (str == null) return null;
         int len = str.length;
-        if (len < 2) return null;
+        if (len < 2) return str.toString();
 
         int tail = 1;
 
