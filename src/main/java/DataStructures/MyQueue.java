@@ -10,7 +10,7 @@ import java.util.*;
 class MyQueue
 {
     protected int Queue[] ;
-    protected int front, rear, size, len;
+    protected int front, rear,  size, len;
 
     /* Constructor */
     public MyQueue(int n)

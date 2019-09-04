@@ -5,7 +5,7 @@ public class User {
     private String details;
     private int accountType;
 
-    public void renewMembership() {  }
+    public void renewMembership() {}
 
     public User(int id, String details, int accountType) {
         userId = id;

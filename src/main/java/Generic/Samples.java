@@ -70,6 +70,7 @@ public class Samples {
         countAndSay(5);
 
         int[] n1 = {-2, -1, 0, 4, 3, 1};
+        Arrays.binarySearch(n1, 0);
         int[] n2 = {1001, 1002, 1004, 1005};
         System.out.println(firstMissingPositive(n1));
         System.out.println(firstMissingPositive(n2));
@@ -94,6 +95,20 @@ public class Samples {
         System.out.println(multiply(-2 ,-3));
         System.out.println(multiply(-2 ,3));
 
+
+        System.out.println(isSubstring("Hiello World", "Hello"));
+        //isSubstring1("Hello World", "Hello");
+
+        System.out.println("countNumbersWithUniqueDigits: " + countNumbersWithUniqueDigits(3));
+
+        int[] arrKth = {3,2,1,5,6,4}; // 1,2,3,4,5,6
+        int[] arrKth1 = {3,2,3,1,2,4,5,5,6}; // 1,2,3,4,5,6
+        System.out.println("fndKthLargest - " + fndKthLargest(arrKth, 2));
+        System.out.println("fndKthLargest - " + fndKthLargest(arrKth1, 4));
+        System.out.println("fndKthLargest - " + fndKthSmallest(arrKth1, 4));
+        System.out.println("fndKthLargest - " + fndKthSmallest(arrKth, 2));
+        System.out.println("fndKthLargest - " + fndKthSmallest(arrKth1, 4));
+        System.out.println(addWiithoutOperator(2,5));
     }
 
     // Reverse a integer
@@ -932,4 +947,119 @@ public class Samples {
         return -1;
     }
 
+    public static boolean isSubstring(final String text, final String query) {
+        int j = 0;
+        for (int i = 0; i < text.length(); i++) {
+            if (text.charAt(i) == query.charAt(j)) {
+                j++;
+                if (j == query.length()) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    static boolean isSubstring1(String query, String text)
+    {
+        int M = query.length();
+        int N = text.length();
+
+        /* A loop to slide text one by one */
+        for (int i = 0; i <= N - M; i++) {
+            int j;
+
+            /* For current index i, check for
+            pattern match */
+            for (j = 0; j < M; j++)
+                if (text.charAt(i + j) != query.charAt(j))
+                    break;
+
+            if (j == M)
+                return true;
+        }
+        return false;
+    }
+
+    /*
+    i = 1, 10: nothing is dupliated
+    i = 2, 9 * 9: the first digit has 9 options (exclude 0), the second digit also has 9 options
+    (exclude the number already taken by the first digit, but include 0).
+    i = 3, 9 * 9 * 8: first two digits follows rules in i = 2, then the third digit has options that
+    exclude all numbers taken by the previous two digits.
+     */
+
+    public static int countNumbersWithUniqueDigits(int n) {
+        if (n == 0) return 1;
+        if (n == 1) return 10;
+        int cur = 9, next = 9, ans = 10;
+        for (int i = 2;i <= n;i++) {
+            ans += cur * next;
+            cur = cur * next;
+            next--;
+        }
+        return ans;
+    }
+
+    public static int countNumbersWithUniqueDigits1(int n) {
+        if (n == 0) return 1;
+        if (n == 0) return 10;
+        int rst = 10, count = 9;
+        for (int i = 2; i <= n; i++) {
+            count *= (10 - i + 1);
+            rst += count;
+        }
+        return rst;
+    }
+
+
+    public static int fndKthLargest(int[] nums, int k){
+    PriorityQueue<Integer> heap = new PriorityQueue<Integer>();
+    for(int num : nums){
+        heap.add(num);
+        if(heap.size()>k){
+            heap.remove();
+        }
+    }
+    return heap.poll();
+    }
+
+    public static int fndKthSmallest(int[] nums, int k) {
+        Integer kThSmallest = 0;
+        PriorityQueue<Integer> heap = new PriorityQueue<Integer>();
+        for (int num : nums) {
+            heap.add(num);
+        }
+        for (int i = 1; i <= k; i++) {
+            kThSmallest = heap.remove();
+            while(kThSmallest==heap.peek()){
+                heap.remove();
+            }
+
+        }
+        return kThSmallest;
+    }
+
+    static int addWiithoutOperator(int x, int y)
+    {
+        // Iterate till there is no carry
+        while (y != 0)
+        {
+            // carry now contains common
+            // set bits of x and y
+            int carry = x & y;
+
+            // Sum of bits of x and
+            // y where at least one
+            // of the bits is not set
+            x = x ^ y;
+
+            // Carry is shifted by
+            // one so that adding it
+            // to x gives the required sum
+            y = carry << 1;
+        }
+        return x;
+    }
 }
+

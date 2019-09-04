@@ -124,8 +124,16 @@ public class ArrayAndStrings {
         System.out.println(subArraySum(arr8, 22));
 
 
-        int arr9[] = {5,6,3,15,11};
-        System.out.println("Nth Smallest - "+NthSmallest(arr9, 3));
+//        int arr9[] = {5,6,3,15,11};
+//        System.out.println("Nth Smallest - "+NthSmallest(arr9, 3));
+
+        int arr10[] = {3,2,2,3};
+        removeElement(arr10, 3);
+
+        int arr11[] = {2, 3, 6, 7};
+        combinationSum(arr11, 7);
+
+
     }
 
     public static void printMatrix(int[][] a) {
@@ -429,7 +437,8 @@ public class ArrayAndStrings {
         if (len == s2.length() && len > 0) {
             /* concatenate s1 and s1 within new buffer */
             String s1s1 = s1 + s1;
-            //return isSubstring(s1s1, s2);
+            return s1s1.contains(s2);
+            //isSubstring(s1s1, s2);
         }
         return false;
     }
@@ -438,6 +447,25 @@ public class ArrayAndStrings {
         int i;
         for (i = 10; i >= 0; --i)
             System.out.println(i);
+    }
+
+    // Hello World
+    // hlo - false
+    // hwd - true
+    // elo -
+    // engineer rocks
+
+    public static boolean findPatternedOrder(String str, String pattern){
+        if (pattern.length()>str.length()) return false;
+        for(int i=0; i<pattern.length()-1; i++){
+            char x = pattern.charAt(i);
+            char y = pattern.charAt(i+1);
+            int lastIndex = str.lastIndexOf(x);
+            int firstIndex = str.indexOf(y);
+            if(lastIndex>firstIndex || firstIndex==-1 || lastIndex==-1) return false;
+        }
+        return true;
+
     }
 
     //Output the first duplicated char in a string anupam
@@ -534,8 +562,8 @@ public class ArrayAndStrings {
 
 
     // Return the Start and End indices consecutive non-zero elements of an array
-    //{0,0,0,1,2,3,0,0,6,8} -> {{3,5}{8,9}}
-    //{1,2,3,0,0,6} -> {{0,2}{5,5}}
+    // {0,0,0,1,2,3,0,0,6,8} -> {{3,5}{8,9}}
+    // {1,2,3,0,0,6} -> {{0,2}{5,5}}
 
     public static HashMap<Integer, Integer> retIndices(int a[]) {
         HashMap<Integer, Integer> hm = new HashMap<Integer, Integer>();
@@ -1240,6 +1268,53 @@ public class ArrayAndStrings {
         }
         else{
             return arr[start];
+        }
+    }
+
+        public static int removeElement(int[] nums, int val) {
+            int len = nums.length;
+            int index = 0;
+            for(int i=0; i<len; i++){
+                if(nums[i]==val){
+                    continue;
+                }
+                else{
+                    nums[index] = nums[i];
+                    index++;
+                }
+            }
+            return index;
+        }
+
+    public static List<List<Integer>> combinationSum(int[] candidates, int target) {
+        List<List<Integer>> results = new ArrayList<>();
+
+        if (candidates == null || candidates.length == 0) {
+            return results;
+        }
+
+        Arrays.sort(candidates);
+
+        List<Integer> combination = new ArrayList<>();
+        toFindCombinationsToTarget(results, combination, candidates, target, 0);
+
+        return results;
+    }
+
+    private static void toFindCombinationsToTarget(List<List<Integer>> results, List<Integer> combination, int[] candidates, int target, int startIndex) {
+        if (target == 0) {
+            results.add(new ArrayList<>(combination));
+            return;
+        }
+
+        for (int i = startIndex; i < candidates.length; i++) {
+            if (candidates[i] > target) {
+                break;
+            }
+
+            combination.add(candidates[i]);
+            toFindCombinationsToTarget(results, combination, candidates, target - candidates[i], i);
+            combination.remove(combination.size() - 1);
         }
     }
 }

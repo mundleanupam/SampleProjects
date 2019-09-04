@@ -189,7 +189,6 @@ public class ArraysStrings {
 // ------------------------------------------------------------------------------------------------------------------
 
     // tact coa
-    //
     boolean isPermutationOfPalindrome1(String phrase) {
         int countOdd = 0;
         int[] table = new int[Character.getNumericValue('z') -

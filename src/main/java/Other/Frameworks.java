@@ -160,8 +160,8 @@ class Frameworks {
 
             // Check if x is present at mid
             if (arr[m] == x){
-                count++;
-                System.out.println(arr[m]);
+                //count++;
+                System.out.println("Found element in Binary Search- " + arr[m]);
                 return true;
             }
             // If x greater, ignore left half
@@ -174,6 +174,7 @@ class Frameworks {
 
         // if we reach here, then element was
         // not present
+        System.out.println("Cound not find element in Binary Search- " + x);
         return false;
     }
 
