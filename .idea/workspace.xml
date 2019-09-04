@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d8dae9e-aa8c-4364-af7f-28e22bbbe3c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/DataStructures/StackQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BookReader/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BookReader/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CrackingCode/ArraysStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CrackingCode/ArraysStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataStructures/MyQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataStructures/MyQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Generic/ArrayAndStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Generic/ArrayAndStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Generic/Samples.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Generic/Samples.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Other/Frameworks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Other/Frameworks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sorting/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sorting/Sort.java" afterDir="false" />
-    </list>
+    <list default="true" id="5d8dae9e-aa8c-4364-af7f-28e22bbbe3c4" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -219,131 +209,6 @@
               <item name="SampleProjects" type="b2602c69:ProjectViewProjectNode" />
               <item name="SampleProjects" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SampleProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SampleProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SampleProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SampleProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SampleProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SampleProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SampleProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SampleProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="BookReader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SampleProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SampleProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="CallCenter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SampleProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SampleProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="CrackingCode" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SampleProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SampleProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SampleProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SampleProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
-              <item name="CrunchifyLinkedList.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="SampleProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SampleProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
-              <item name="DoubleLinkedList.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="SampleProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SampleProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="DataStructures" type="462c0819:PsiDirectoryNode" />
-              <item name="MyBinarySearchTree.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="SampleProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SampleProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Dynamic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SampleProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SampleProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Generic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SampleProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SampleProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Other" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SampleProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SampleProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ParkingLot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SampleProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SampleProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Quora" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SampleProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SampleProjects" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Sorting" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -468,9 +333,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="23" width="1440" height="812" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28898427" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28898427" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -481,7 +345,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32823366" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3986111" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3986111" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
